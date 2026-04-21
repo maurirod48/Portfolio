@@ -428,7 +428,7 @@
 }
 
 
-@media (min-width:1240px) {
+@media (max-width:1240px) {
 
     /* PROJECT 0 */
 
@@ -443,7 +443,7 @@
 
     .project-0-content {
         text-align: right;
-        width: 500px;
+        width: 300px;
     }
 
 
