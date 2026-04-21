@@ -241,6 +241,50 @@
 }
 
 
+
+
+
+@media (max-width:1400px) {
+
+    /* PROJECT 0 */
+
+    .projects-title-container {
+        gap: 1rem;
+        margin-left: 15rem;
+    }
+
+    .project-0-container {
+        margin-left: 2rem;
+        margin-right: 6rem;
+    }
+
+    .project-0-content {
+        text-align: right;
+        width: 300px;
+    }
+
+    .project-0-tools-used-container ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        /* margin-left: 100px; */
+        justify-content: end;
+    }
+
+
+    .project-0-description {
+        top: 200px;
+        right: 40px;
+        width: 600px;
+        padding: 0rem 1rem;
+    }
+
+    .project-0-links-wrapper {
+        bottom: 0;
+        right: 80px;
+    }
+    
+}
+
 /*////////////
 /*620PX*/
 @media (max-width: 620px) {
@@ -329,6 +373,7 @@
     #experience {
         margin-top: 40rem;
         padding-top: 4rem;
+        margin-left: 2rem;
     }
 
     .experience-container {
@@ -396,10 +441,7 @@
     }
 
     .project-0-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10rem;
-        width: 1200px;
+        display: none;
     }
 
     .projects-title-container {
@@ -414,57 +456,26 @@
         background-color: aliceblue;
     }
 
-    .project-0-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0rem;
-        width: 600px;
-    }
-
-    .project-img-container {
-        width: 380px;
-        height: 300px;
-    }
-}
-
-
-@media (max-width:1400px) {
-
-    /* PROJECT 0 */
-
-    .projects-title-container {
-        gap: 1rem;
-        margin-left: 15rem;
-    }
-
-    .project-0-container {
-        margin-left: 2rem;
-        margin-right: 6rem;
+    .project-0-container-mobile-view {
+        display: block;
+        max-width: 350px;
     }
 
     .project-0-content {
-        text-align: right;
-        width: 300px;
+        text-align: start;
     }
 
-    .project-0-tools-used-container ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-        /* margin-left: 100px; */
-        justify-content: end;
-    }
-
-
-    .project-0-description {
-        top: 200px;
-        right: 40px;
-        width: 600px;
-        padding: 0rem 1rem;
-    }
 
     .project-0-links-wrapper {
-        bottom: 0;
-        right: 80px;
+        display: flex;
+        position: relative;
+        margin-left: 5rem;
+        margin-top: .5rem;
     }
-    
+
+    .project-img-container {
+        width: 350px;
+        height: 240px;
+        margin-top: 2rem;
+    }
 }
