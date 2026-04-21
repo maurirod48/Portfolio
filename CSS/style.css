@@ -1,0 +1,594 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(160, 192, 215);
+  background-color: rgb(4, 23, 44);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 4rem;
+}
+
+.nav-bar-right-content-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.resume-link {
+  color: rgb(104, 217, 213);
+  text-decoration: none;
+}
+
+.nav-bar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-bar-links li {
+  list-style: none;
+  transition: 200ms ease-in-out all;
+}
+
+.nav-bar-links a:hover {
+  color: rgb(104, 217, 213);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.nav-bar-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  transition: 200ms all ease-in-out;
+}
+
+
+/*==============
+HAMBURGER MENU*/
+.hamburger-menu-container {
+  display: none;
+  z-index: 1000;
+}
+
+.ham-menu-options-container {
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.6);
+  transition: 300ms all ease-in-out;
+}
+
+.ham-menu-options-container.active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.ham-menu-options-container.active .list-of-options{
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.ham-menu-inner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ham-menu-options { 
+  background-color: #273c62;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.ham-menu-options li {
+  list-style: none;
+}
+
+.list-of-options {
+  width: 100px; 
+  display: flex; flex-direction:column; justify-content: center; align-items: center;
+  visibility: hidden;
+  gap: 1rem;
+}
+
+.list-of-options a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  transition: 200ms all ease-in-out;
+}
+
+.list-of-options a:hover {
+  color: rgb(104, 217, 213);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+/*===========*/
+
+.resume-btn {
+  border: 1px solid rgb(104, 217, 213);
+  border-radius: .5rem;
+  padding: .8rem 1.3rem;
+}
+
+.resume-btn:hover {
+  background-color: rgb(104, 217, 213);
+  color: rgb(4, 23, 44);
+  font-weight: 600px;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.social-panel {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80px;
+    padding: 0 1.4rem;
+}
+
+.social-panel::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 70px;
+    background-color: white;
+}
+
+.feather {
+  height: 35px;
+  width: 35px;
+  transition: ease-in-out all 200ms;
+  color: white;
+}
+
+.feather:hover {
+  transform: translateY(-5px);
+  color: rgb(104, 217, 213);
+}
+
+.social-panel a {
+  color: whitesmoke;
+}
+
+/*My email container*/
+.my-email-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 40px;
+  position: fixed;
+  margin-right: 2rem;
+}
+
+.my-email-side::after {
+  content: '';
+  width: 2px;
+  height: 70px;
+  background-color: white;
+  margin-top: 8rem;
+}
+
+.my-email-container {
+  transform: rotate(90deg);
+  /* width: 40px; */
+  color: white;
+}
+
+.my-email-container a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 200ms ease-in-out all;
+}
+
+.my-email:hover {
+  color: rgb(104, 217, 213);
+}
+
+/*MAIN STYLING*/
+
+.main {
+  margin-left: 120px; /* To not overlap with the .social-panel element*/
+  margin-right: 120px; /* To not overlap with the element showing my email on the right-hand side of the screen*/
+  flex: 1;
+}
+
+.intro {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  height: 100vh;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(104, 217, 213);
+}
+
+.intro h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro-paragraph {
+  width: 550px;
+}
+
+.intro-paragraph p {
+  font-size: 1.3rem;
+}
+
+/* ABOUT SECTION*/
+#about {
+  padding-top: 12rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.about-me-title::before{
+  content: "▹";
+  color: rgb(104, 217, 213);
+  font-size: 2rem;
+  line-height: 12px;
+  margin-right: 10px;
+}
+
+.about-me-title {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  margin-left: 1rem;
+}
+
+.about-me-1 {
+  display: flex; 
+  justify-content: center; 
+  /* flex: 1;  */
+  max-width: 1000px;
+}
+
+.about-me-2 p {
+  margin-top: 3rem;
+}
+
+.my-pic-container {
+  margin-left: 4rem;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.my-pic-container-background {
+  position: absolute;
+  border: solid 1px rgb(104, 217, 213);
+  width: 380px;
+  height: 440px;
+  z-index: -10;
+  top: 15px;
+  left: 20px;
+  transition: all 200ms ease-in-out
+}
+
+.my-img {
+  width: 380px;
+  height: 440px;
+  border-radius: .5rem;
+  transition: all 200ms ease-in-out
+}
+
+/* Animation for when user hovers over my pic */
+.my-pic-container:hover .my-pic-container-background {
+  transform: translateY(10px) translateX(5px);
+  border: solid 2px rgb(104, 217, 213);
+}
+
+.my-pic-container:hover .my-img {
+  transform: translateY(-10px) translateX(-5px);
+}
+
+/*EXPERIENCE SECTION STYLING*/
+#experience {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 10rem;
+}
+
+.experience-container {
+  width: 800px
+}
+
+.experience-content-wrapper {
+  display: flex;
+}
+
+.experience-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-title h1{
+  color: white;
+}
+
+.experience-title::before{
+  content: "▹";
+  color: rgb(104, 217, 213);
+  font-size: 2rem;
+  line-height: 12px;
+}
+
+.experience-title::after {
+  content: '';
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  display: block;
+}
+
+.experience-tab-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ms-intune-label, .toast-label, .wakefield-label {
+  width: 100%; 
+  height: 100%; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tab {
+  padding: .5rem 1rem;
+  height: 50px;
+  width: 50%;
+  transition: all ease-in-out 200ms;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.tab label {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.tab-0-line, .tab-1-line, .tab-2-line {
+  transition: all 200ms ease-in-out;
+}
+
+.tab-0-wrapper:hover, .tab-1-wrapper:hover, .tab-2-wrapper:hover {
+  background-color: #152034;
+  color: rgb(104, 217, 213);
+}
+
+
+body:has(#ms-intune:checked) .tab-0-line {
+  height: 100%;
+  background-color: rgb(104, 217, 213);
+  width: 2px;
+  position: absolute;
+  left: 0;
+} 
+
+body:has(#ms-intune:checked) .tab-0-wrapper {
+  background-color: #152034;
+  color: rgb(104, 217, 213);
+}
+
+
+body:has(#toast:checked) .tab-1-line {
+  height: 100%;
+  background-color: rgb(104, 217, 213);
+  width: 2px;
+  position: absolute;
+  left: 0;
+}
+
+body:has(#toast:checked) .tab-1-wrapper {
+  background-color: #152034;
+  color: rgb(104, 217, 213);
+}
+
+body:has(#wakefield:checked) .tab-2-line {
+  height: 100%;
+  background-color: rgb(104, 217, 213);
+  width: 2px;
+  position: absolute;
+  left: 0;
+}
+
+body:has(#wakefield:checked) .tab-2-wrapper {
+  background-color: #152034;
+  color: rgb(104, 217, 213);
+}
+
+
+/*EXPERIENCE PANELS STYLING*/
+
+.experience-dynamic-text {
+  position: relative;
+  width: 65%;
+  margin-top: 3rem;
+}
+
+.experience-panel {
+  visibility: hidden;
+  transition: 200ms all ease-in-out;
+  opacity: 0;
+  position: absolute;
+}
+
+body:has(#ms-intune:checked) .experience-panel-0 {
+  visibility: visible;
+  opacity: 1;
+}
+
+body:has(#toast:checked) .experience-panel-1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+body:has(#wakefield:checked) .experience-panel-2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.experience-panel h3 {
+  margin: 8px 0;
+}
+
+.job-title {
+  color: white;
+}
+
+.location a{
+  color: rgb(104, 217, 213);
+  text-decoration: none;
+}
+
+
+/*PROJECTS SECTION STYLING*/
+#projects {
+  padding-bottom: 6rem;
+}
+
+.projects-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 18rem;
+}
+
+.projects-title-container::before {
+  content: "▹";
+  color: rgb(104, 217, 213);
+  font-size: 2rem;
+  font-weight: 600px;
+  line-height: 12px;
+
+}
+
+
+.projects-title-container::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 600px;
+  background-color: aliceblue;
+}
+
+.projects-title-container h1 {
+  color: white;
+}
+
+
+.project-0-container {
+  display: flex;
+
+  position: relative;
+  margin-left: 10rem;
+
+  width: 1200px;
+}
+
+.project-img-container {
+  width: 570px;
+  height: 400px;
+}
+
+.project-0-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-0-content {
+  text-align: right;
+  width: 470px;
+}
+
+.project-0-content p {
+  color: rgb(104, 217, 213);
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.project-0-content h1 {
+  margin: 0;
+}
+
+.project-0-description {
+  position: absolute;
+  top: 220px;
+  right: 100px;
+  width: 600px;
+  background-color: #1d2c49;
+  padding: 0rem 1rem;
+  border-radius: .5rem;
+}
+
+.project-0-tools-used-container ul {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-0-tools-used-container li {
+  list-style: none;
+}
+
+.project-0-links-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  display: flex;
+  gap: 1rem;
+}
