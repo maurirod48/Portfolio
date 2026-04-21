@@ -428,9 +428,9 @@
 }
 
 
-/* @media (min-width:2000px) {
+@media (min-width:1240px) {
 
-    /* PROJECT 0 
+    /* PROJECT 0 */
 
     .projects-title-container {
         gap: 1rem;
@@ -459,4 +459,4 @@
         right: 80px;
     }
     
-} */
+}
