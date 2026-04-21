@@ -252,7 +252,7 @@ HAMBURGER MENU*/
   padding-top: 12rem;
   height: 100vh;
   display: flex;
-  margin-left: 8rem;
+  margin-left: 6rem;
   /* justify-content: center; */
 }
 
@@ -328,7 +328,8 @@ HAMBURGER MENU*/
 /*EXPERIENCE SECTION STYLING*/
 #experience {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-left: 12rem;
   height: 100vh;
   margin-top: 10rem;
 }
