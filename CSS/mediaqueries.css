@@ -302,6 +302,10 @@
         transition: 200ms all ease-in-out;
     }
 
+    .hamburger-menu-container {
+        padding-left: 2rem;
+    }
+
     .intro {
         margin-left: 10px;
         max-width: 350px;
