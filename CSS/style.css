@@ -603,3 +603,50 @@ body:has(#wakefield:checked) .experience-panel-2 {
   display: flex;
   gap: 1rem;
 }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.contact-me-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.contact-me-title::before {
+  content: "▹";
+  color: rgb(104, 217, 213);
+  font-size: 2rem;
+  font-weight: 600px;
+  line-height: 12px;
+}
+
+.contact-content h2{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.email-me-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.email-me-btn {
+  border: 1px solid rgb(104, 217, 213);
+  cursor: pointer;
+  padding: .8rem 1.3rem;
+  background-color: transparent;
+  color: rgb(104, 217, 213);
+  font-size: 2rem;
+}
+
+.email-me-btn:hover {
+  background-color: rgb(104, 217, 213);
+  color: rgb(4, 23, 44);
+  font-weight: 600px;
+}
