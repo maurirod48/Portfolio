@@ -300,7 +300,7 @@ HAMBURGER MENU*/
 .my-pic-container-background {
   position: absolute;
   border: solid 1px rgb(104, 217, 213);
-  width: 380px;
+  width: 400px;
   height: 440px;
   z-index: -10;
   top: 15px;
@@ -309,7 +309,7 @@ HAMBURGER MENU*/
 }
 
 .my-img {
-  width: 380px;
+  width: 400px;
   height: 440px;
   border-radius: .5rem;
   transition: all 200ms ease-in-out
@@ -652,7 +652,7 @@ body:has(#wakefield:checked) .experience-panel-2 {
 }
 
 footer {
-  margin-top: 8rem;
+  margin-top: 12rem;
   text-align: center;
   padding: 2rem;
 }
