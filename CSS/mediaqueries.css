@@ -484,4 +484,9 @@
         height: 240px;
         margin-top: 2rem;
     }
+
+    .fspc {
+        display: block;
+        margin-left: 4rem;
+    }
 }
