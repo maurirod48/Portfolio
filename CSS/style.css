@@ -606,7 +606,8 @@ body:has(#wakefield:checked) .experience-panel-2 {
 
 #contact {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-left: 40%;
   margin-top: 10rem;
 }
 
@@ -671,3 +672,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+/* .contact-content h2 {
+  margin-right: 8rem;
+} */
+
+/* .contact-div {
+  margin-right: 4rem;
+} */

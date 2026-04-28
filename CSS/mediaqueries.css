@@ -241,6 +241,10 @@
     }
 
     /* CONTACT SECTION */
+    #contact {
+        margin-left: 30%;
+    }
+
     .footer-social-panel {
         display: flex;
     }
@@ -250,7 +254,7 @@
 
 
 
-@media (max-width:1400px) {
+@media (max-width:1455px) {
 
     /* PROJECT 0 */
 
@@ -287,6 +291,9 @@
     .project-0-links-wrapper {
         bottom: 0;
         right: 80px;
+    }
+    #contact {
+        margin-left: 20%;
     }
     
 }
@@ -495,5 +502,9 @@
     .fspc {
         display: block;
         margin-left: 4rem;
+    }
+
+    #contact {
+        margin-left: 4.5rem;
     }
 }
